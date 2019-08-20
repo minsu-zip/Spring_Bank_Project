@@ -6,16 +6,14 @@
     </head>
 
     <body>
-        
+        <form th:action="@{/organization/read}">
+            ID: <input name="ID" type="text">
+            NAME: <input name="NAME" type="text">
+            HABBY: <input name="HABBY" type="text">
+            <button type="submit" id="BUTTON">BUTTON</button>
+        </form>
          
-        
 
-    
-       <!-- <p th:text="${paramMap.ID}"></p> -->
-       <span th:text="${paramMap.ID}"></span>
-       <span th:text="${paramMap.NAME}"></span>
-       <span th:text="${paramMap.HABBY}"></span>
-        
         
 
     </body>
