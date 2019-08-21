@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+    <head>
+        <script scr="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+        <script scr="../../static/css/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <!-- <form th:action="@{/organization/read}">
+            ID: <input name="ID" type="text">
+            NAME: <input name="NAME" type="text">
+            HABBY: <input name="HABBY" type="text">
+            <button type="submit" id="BUTTON">BUTTON</button>
+        </form> -->
+         
+       
+        <form th:action="@{/organization/testinput}">
+            <input name="name1" type="text" th:value="(${A.name1} =='' ? '': ${A.name1})">
+            <select name="ch">
+                <option name="n1" value="제목">제목</option>
+                <option name="n2" value="설명">설명</option>
+                <option name="n3" value="만든이">만든이</option>
+            </select>
+            <button type="submit">검색</button>
+        </form>
+        
+
+        <table>
+            <tr th:each = "resultData1: ${resultList}">
+                <td th:text= ${resultData1.NAME}></td>
+                <td th:text= ${resultData1.COMMON_CODE_ID}></td>
+                <td th:text= ${resultData1.DES}></td>
+            </tr>
+        </table>
+        
+
+    </body>
+</html>
