@@ -7,6 +7,7 @@
     <version>2.1.7.RELEASE</version>
     <relativePath/>
   </parent>
+
   <groupId>com.example</groupId>
   <artifactId>test_spring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -15,43 +16,57 @@
   <properties>
     <java.version>1.8</java.version>
   </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
       <scope>runtime</scope>
     </dependency>
+
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
       <groupId>org.mybatis.spring.boot</groupId>
       <artifactId>mybatis-spring-boot-starter</artifactId>
       <version>2.1.0</version>
       <scope>compile</scope>
     </dependency>
+
+    <dependency>
+      <groupId>nz.net.ultraq.thymeleaf</groupId>
+      <artifactId>thymeleaf-layout-dialect</artifactId>
+    </dependency>
+
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -61,3 +76,4 @@
     </plugins>
   </build>
 </project>
+

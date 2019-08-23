@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" layout:decorator="layout/defaultLayout">
+
+<head>
+    <script scr="../../static/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+    <script scr="../../static/css/jquery.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <th:block layout:fragment="layout.content">
+            <h1>Page Content</h1>
+        </th:block>
+    </div>
+
+
+</body>
+</html>

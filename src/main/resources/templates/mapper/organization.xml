@@ -6,7 +6,7 @@
     
 <mapper namespace="organization">
 	<select id="list" resultType="Map" parameterType="Map">
-        select * from 
+        select * from CIP_ORGANIZATION;
 	</select>
 
 	<insert id="merge" parameterType="Map">

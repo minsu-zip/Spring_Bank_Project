@@ -8,18 +8,12 @@
     <body>
 
        
-  
-
-        <form th:action="@{/student/view}">
-            <input name="name" type="text" th:value="(${A.name1} =='' ? '': ${A.name1})">
-            <select name="id">
-                <option name="n1" value="제목">제목</option>
-                <option name="n2" value="설명">설명</option>
-                <option name="n3" value="만든이">만든이</option>
-            </select>
-            <button type="submit">검색</button>
-        </form>
-        
+        <table>
+            <!-- <tr th: each="resultData: ${resultList}">
+                <td th:text = ${resultData.list}></td>
+            </tr>
+     -->
+        </table>
 
     </body>
 </html>
