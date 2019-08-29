@@ -1,8 +1,5 @@
 package com.example.test_spring.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import com.example.test_spring.service.StudentService;

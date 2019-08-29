@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class ByPassController {
 
-    @RequestMapping(value = "/layout/{thymeleafBase, defaultLayout}", method = RequestMethod.GET)
+    @RequestMapping(value = "/layout/body", method = RequestMethod.GET)
         public void action(){
         }
 
